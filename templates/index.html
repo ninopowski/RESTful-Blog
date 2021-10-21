@@ -23,7 +23,7 @@
         <div class="post-preview">
           <a href="{{ url_for('show_post', post_id=post.id) }}">
             <h2 class="post-title">
-              {{post.title}}
+              {{post.title}} <a href="{{ url_for('delete', post_id=post.id) }}">✘</a>
             </h2>
             <h3 class="post-subtitle">
               {{post.subtitle}}
